@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MOBIntroducaoAndroid_Aula2_App2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo1">Olá, sou a Activity Principal!</string>
+    <string name="title_activity_activity_secundaria">ActivitySecundaria</string>
+    <string name="titulo2">Olá, sou a Activity Secundária!</string>
+    <string name="btn2">Fechar e Retornar</string>
+    <string name="btn1">Chamar Activity Secundária</string>
+</resources>

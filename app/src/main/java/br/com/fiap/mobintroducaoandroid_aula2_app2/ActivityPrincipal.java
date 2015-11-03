@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,7 +16,18 @@ public class ActivityPrincipal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity_principal);
+
+        if (savedInstanceState != null)
+            Log.i("ESTADO", savedInstanceState.getString("teste"));
+
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("teste", "Meu teste...");
+        super.onSaveInstanceState(outState);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -56,8 +68,9 @@ public class ActivityPrincipal extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.menuSobre) {
+            Intent toActivity2 = new Intent(this, ActivitySobre.class);
+            startActivity(toActivity2);
         }
 
         return super.onOptionsItemSelected(item);

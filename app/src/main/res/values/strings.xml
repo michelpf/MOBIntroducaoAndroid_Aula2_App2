@@ -8,4 +8,8 @@
     <string name="titulo2">Olá, sou a Activity Secundária!</string>
     <string name="btn2">Fechar e Retornar</string>
     <string name="btn1">Chamar Activity Secundária</string>
+    <string name="menuSobre">Sobre</string>
+    <string name="title_activity_activity_sobre">ActivitySobre</string>
+    <string name="appSobre">Aplicativo desenvolvido por José da XYZ System.</string>
+    <string name="btnOK">OK</string>
 </resources>
